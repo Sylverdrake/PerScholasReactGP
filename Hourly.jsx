@@ -3,7 +3,7 @@ import React from "react";
 const Hourly = (props) => {
   return (
     <div className='mainContainer'>
-      <h2 className="hourlyDiv">Hourly Forecast: </h2>
+      <h2 className="hourlyDiv"> Hourly Forecast: </h2>
       <div className="block">
         <ul className="individual">
           
