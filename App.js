@@ -43,7 +43,7 @@ useEffect(()=>{getWeather()}, [location]);
       <h2><a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a></h2>
       <SubmitLocation locationSearch={getLocation}/>
       {weather?<ForecastSeven wInfo={weather}/> : <p>Loading...</p>}
-
+      <img src="https://i.ibb.co/WcgHnJV/Atmo-Cast-Logo-Final-CUTpsd.png"  alt ="" className="logoImg"/> 
       {/* {weather?<Hourly hourlyWeather={weather} /> : <p>Loading...</p>} */}
       Resources: https://www.epa.gov/sunsafety/uv-index-scale-0
     </div>
