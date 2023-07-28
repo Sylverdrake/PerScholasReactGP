@@ -23,7 +23,7 @@ function App() {
 
   const getWeather = async () =>
   {
-    await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=40.4406&longitude=-79.9959&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant,shortwave_radiation_sum&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=kn&precipitation_unit=inch&timezone=auto&models=gfs_seamless`)
+    await axios.get(`https://api.open-meteo.com/v1/forecast?latitude=${location.latitude}&longitude=${location.longitude}&daily=weathercode,temperature_2m_max,temperature_2m_min,sunrise,sunset,uv_index_max,precipitation_hours,precipitation_probability_max,windspeed_10m_max,winddirection_10m_dominant,shortwave_radiation_sum&current_weather=true&temperature_unit=fahrenheit&windspeed_unit=kn&precipitation_unit=inch&timezone=auto&models=gfs_seamless`)
     .then(res => 
       {
         console.log(res.data)
@@ -42,6 +42,7 @@ useEffect(()=>{getWeather()}, [location]);
       <h2><a href="https://open-meteo.com/">Weather data by Open-Meteo.com</a></h2>
       <SubmitLocation locationSearch={getLocation}/>
       {weather?<ForecastSeven wInfo={weather}/> : <p>Loading...</p>}
+      Resources: https://www.epa.gov/sunsafety/uv-index-scale-0
     </div>
   );
 }
