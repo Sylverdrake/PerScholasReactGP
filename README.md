@@ -2,17 +2,11 @@
 
 ## Weather App
 
-![alt text](https://i.ibb.co/WcgHnJV/Atmo-Cast-Logo-Final-CUTpsd.png)
+![alt text](https://i.ibb.co/r29rxWk/cleancut-logo-for-README-3-resize.png)
 
 ## Atmo-Cast
 
 A local weather forecast app including 7-day, 10-day, & hourly forecast by location.
-
-### Screenshots
-
----
-
-![screenshot 1](https://files.slack.com/files-pri/T04411PBUN8-F05JRH90G5V/7dayforecast.png)
 
 ### Goal
 
@@ -88,8 +82,23 @@ Fabrice: 2 Components
 -ReactDOM
 ```
 
+### Screenshots
+
+![screenshot](https://i.ibb.co/JQh7XXf/ss1.png)
+
+#### Credits:
+
+```
+-Fotor - Image Generation for Logo
+-Photoshop - Image Editing
+-Figma - Wireframe Flow Diagram
+
+```
+
 #### Roadmap:
 
-- [ ] txt
+- [x] Sliding Daily Weather Block Keyframe Animations
+- [ ] Link All Collaborative Pages With Router
+- [x] Unique Additional Navigation Bar For Hourly Page
 
 ---
