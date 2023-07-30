@@ -1,6 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react';
 
 function ForecastSeven(props) {
+    const [isActive0, setActive0] = useState(false)
+    const [isActive1, setActive1] = useState(false)
+    const [isActive2, setActive2] = useState(false)
+    const [isActive3, setActive3] = useState(false)
+    const [isActive4, setActive4] = useState(false)
+    const [isActive5, setActive5] = useState(false)
+    const [isActive6, setActive6] = useState(false)
+
+const toggleClass = (boxIndex) =>{
+    setActive0(boxIndex === 0 ? !isActive0 : false)
+    setActive1(boxIndex === 1 ? !isActive1 : false)
+    setActive2(boxIndex === 2 ? !isActive2 : false)
+    setActive3(boxIndex === 3 ? !isActive3 : false)
+    setActive4(boxIndex === 4 ? !isActive4 : false)
+    setActive5(boxIndex === 5 ? !isActive5 : false)
+    setActive6(boxIndex === 6 ? !isActive6 : false)
+  }
+
     //rounds up lat/long
     const roundUp = (x) =>
     {
@@ -43,7 +61,7 @@ return (
         </div>
 
 <div className="forecastWrapper">
-    <div className='forecastBox'>
+    <div className={`forecastBox0 ${isActive0 ? 'activeForecast0' : ''}`} onClick={() => toggleClass(0)}>
         Current Day
         <p>Day: {props.wInfo.daily.time[0]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[0]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -60,7 +78,7 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
+    <div className={`forecastBox1 ${isActive1 ? 'activeForecast1' : ''}`} onClick={() => toggleClass(1)}>
         Tomorrow
         <p>Day: {props.wInfo.daily.time[1]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[1]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -77,7 +95,7 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
+    <div className={`forecastBox2 ${isActive2 ? 'activeForecast2' : ''}`} onClick={() => toggleClass(2)}>
         3rd Day
         <p>Day: {props.wInfo.daily.time[2]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[2]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -94,7 +112,7 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
+    <div className={`forecastBox3 ${isActive3 ? 'activeForecast3' : ''}`} onClick={() => toggleClass(3)}>
         4th Day
         <p>Day: {props.wInfo.daily.time[3]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[3]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -111,8 +129,8 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
-        5th Day4
+    <div className={`forecastBox4 ${isActive4 ? 'activeForecast4' : ''}`} onClick={() => toggleClass(4)}>
+        5th Day
         <p>Day: {props.wInfo.daily.time[4]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[4]} {props.wInfo.daily_units.temperature_2m_max}<br/>
         Temp Min {props.wInfo.daily.temperature_2m_min[4]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -128,7 +146,7 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
+    <div className={`forecastBox5 ${isActive5 ? 'activeForecast5' : ''}`} onClick={() => toggleClass(5)}>
         6th Day
         <p>Day: {props.wInfo.daily.time[5]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[5]} {props.wInfo.daily_units.temperature_2m_max}<br/>
@@ -145,8 +163,8 @@ return (
         </p>
     </div>
 
-    <div className='forecastBox'>
-        75th Day
+    <div className={`forecastBox6 ${isActive6 ? 'activeForecast6' : ''}`} onClick={() => toggleClass(6)}>
+        7th Day
         <p>Day: {props.wInfo.daily.time[6]} {props.wInfo.timezone_abbreviation}<br/>
         Temp Max: {props.wInfo.daily.temperature_2m_max[6]} {props.wInfo.daily_units.temperature_2m_max}<br/>
         Temp Min {props.wInfo.daily.temperature_2m_min[6]} {props.wInfo.daily_units.temperature_2m_max}<br/>
