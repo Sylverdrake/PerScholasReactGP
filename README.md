@@ -84,7 +84,7 @@ Fabrice: 2 Components
 
 ### Screenshots
 
-![screenshot](https://i.ibb.co/JQh7XXf/ss1.png)
+![screenshot](img src="https://i.ibb.co/DwtnKRW/screenshot-7-29-23-HOURLY-w-Nav.png)
 
 #### Credits:
 
