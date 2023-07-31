@@ -11,12 +11,17 @@ function NavBar() {
         </Link>
 
         <Link to="/weeklyforecast">
-        <p className='indItem'>7 Day Forecast</p>
+        <p className='indItem'>Seven Day Forecast</p>
         </Link>
 
-        <Link to="/tendayforecast">
-        <p className='indItem'>10 Day Forecast</p>
+        <Link to="/nextweekforecast">
+        <p className='indItem'>Next Week's Forecast</p>
         </Link>
+
+        <Link to="/lastweekweather">
+        <p className='indItem'>Last Week's Weather</p>
+        </Link>        
+
       </div>
     </div>
   </div>
