@@ -1,6 +1,6 @@
 import './App.css';
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {Route, Routes} from 'react-router-dom'
 
 import SubmitLocation from './components/SubmitLocation';
@@ -8,9 +8,8 @@ import NavBar from './components/NavBar';
 
 import Hourly from './pages/Hourly';
 import WeeklongOrg from './pages/WeeklongOrg';
-
-// import Test2 from './pages/Test2';
-// import Test3 from './pages/Test3';
+import NextWeek from './pages/NextWeek';
+import PastWeek from './pages/PastWeek';
 
 function App() {
   const [location, setLocation] = useState('')
@@ -36,7 +35,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Hourly wInfo={location}/>}/>
         <Route path="/weeklyforecast" element={<WeeklongOrg xInfo={location}/>}/>
-        {/* <Route path="/tendayforecast" element={<Test3 yInfo={location}/>}/> */}
+        <Route path="/nextweekforecast" element={<NextWeek yInfo={location}/>}/>
+        <Route path="/lastweekweather" element={<PastWeek zInfo={location}/>}/>
       </Routes>
 
 
