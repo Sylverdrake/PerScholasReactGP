@@ -30,7 +30,14 @@ function App() {
   return (
 
     <div className="App">
-      <NavBar/>
+      <div className='wholeContainer'>
+      <NavBar>
+    <div className='search Contain'>
+    locationSearch={getLocation}
+    </div>
+      </NavBar>
+      <img src="https://i.ibb.co/WcgHnJV/Atmo-Cast-Logo-Final-CUTpsd.png" className="logoImg"  onClick={() => window.location.reload()}
+  alt="Logo"/>
       <SubmitLocation locationSearch={getLocation}/>
       <Routes>
         <Route path="/" element={<Hourly wInfo={location}/>}/>
@@ -53,6 +60,7 @@ function App() {
       {/* Resources: https://www.epa.gov/sunsafety/uv-index-scale-0 */}
       
     {/* </div> */}
+    </div>
     </div>
   );
 }
