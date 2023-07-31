@@ -6,7 +6,7 @@
 
 ## Atmo-Cast
 
-A local weather forecast app including hourly, the current and next week's forecast, and last week's weather by city.
+A local weather forecast app including hourly, the current, next week's forecast, and last week's weather by city.
 
 ---
 
@@ -22,6 +22,7 @@ If you run into any errors, please submit a ticket.
 ### Roles
 
 Carl: Git Czar, Weekly Weather Components, Routing, Adjusting Geocoder API to work across all components, Readme
+
 Kenny: Hourly Weather Components, Nav Bar, 100% of CSS, Logo work, Initial Routing, Readme
 
 
