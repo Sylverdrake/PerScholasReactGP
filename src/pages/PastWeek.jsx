@@ -61,7 +61,7 @@ let lat = 0
 let long= 0
 
 //latitude direction check
-if(props.xInfo?.latitude >= 0)
+if(props.zInfo?.latitude >= 0)
 {
     lat = 0
 }
@@ -71,7 +71,7 @@ else
 }
 
 //longitude direction check
-if(props.xInfo?.longitude < 0)
+if(props.zInfo?.longitude < 0)
 {
     long = 0
 }
@@ -186,6 +186,7 @@ return (
     </div>
 
     <div className={`forecastBox6 ${isActive6 ? 'activeForecast6' : ''}`} onClick={() => toggleClass(6)}>
+
         <p>Day: {weatherPast.daily?.time[13]} {weatherPast?.timezone_abbreviation}<br/>
         Temp Max: {weatherPast.daily?.temperature_2m_max[13]} {weatherPast.daily_units?.temperature_2m_max}<br/>
         Temp Min {weatherPast.daily?.temperature_2m_min[13]} {weatherPast.daily_units?.temperature_2m_max}<br/>
