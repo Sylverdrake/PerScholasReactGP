@@ -6,54 +6,24 @@
 
 ## Atmo-Cast
 
-A local weather forecast app including 7-day, 10-day, & hourly forecast by location.
-
-### Goal
+A local weather forecast app including hourly, the current and next week's forecast, and last week's weather by city.
 
 ---
 
 Per Scholas Week 9 React API Call Project Assignment: **"Group Project"**
+### Description
 
-### Instructions
+Atmocast is a lightweight multi-page weather application utilizing Open Meteo to provide accessible weather information on the go. You can enter any city location into the search-bar, and through the use of Open Meteo's intuitive APIs, you can see weather data for that location. This app provides a wide range of data that you may find useful and you can even look at last week's weather as well! You can use the navigation to swap between different datasets.
 
-GROUP ASSIGNMENT:
-_The MVP Requirements_
-In order to pass, these are ALL required. Please note, we will be less willing to make compromises here.
-Since there will be groups of 3, make sure to assign someone the role of git czar {BOSS}.
-Planning
-Have a thoroughly developed README.md file.
-React Be a working, interactive React app, built using create react app.
-Utilize React Router, installed via NPM or YARN.
-Have at least 6 separate, rendered components (App.js and Index.js does not count).
-USECONTEXT/ USEREDUCER is a bonus.
-Implement an organized and understandable React file structure.
-Utilize functional React components appropriately.
-Use Axios to consume data from an third party API, and render that data in your components. (Remember, many lists of good API's are listed in the #Resources section.)
-Implementation of React Hooks.
-Project is functional: error, bug and evidence of debugging free.
-There must be a good summary of code contributions from team members in their github repos
-You must list out all the dependencies you use in your readme
-Styling
-Be styled with CSS.
-Use flexbox, or any third party CSS, Ant Design, Material UI, Tailwind CSS, Semantic UI etc...
-Implement responsive design on 3 screen sizes (including desktop) using 2 media queries (tablet and mobile).
-No Bootstrap allowed.
--Required Readme:
-Title: A working title for your app. (Feel free to have some fun with this.)
-Description: 4 to 5 sentences in non-technical speak summarizing the features, functions, and goals.
-Wireframes: Mockups of your app on desktop, tablet, and mobile.
-Component Hierarchy: A visual tree of your components, depicting the parent/child relationships, as well as an indication of which will be class components, requiring state, and which will be functional components, taking props.
-API: The API you will be using and a link to the documentation.
-MVP: Your goals for MVP, including the minimum, need-to-have features of your app.
-Post-MVP: Write out what your goals are for post-MVP, including nice-to-have features that you would like to implement once your MVP is complete. (If you plan to use a component library, please link that here as well.)
+If you run into any errors, please submit a ticket.
 
 ---
 
 ### Roles
 
-Carl: 2 Components, Git Czar, Routing, API Work
-Kenny: 2 Components, CSS, Logo work, Initial Routing
-Fabrice: 2 Components
+Carl: Git Czar, Weekly Weather Components, Routing, Adjusting Geocoder API to work across all components, Readme
+Kenny: Hourly Weather Components, Nav Bar, 100% of CSS, Logo work, Initial Routing, Readme
+
 
 ---
 
@@ -84,9 +54,9 @@ Fabrice: 2 Components
 
 ### Screenshots
 
-![screenshot](img src=https://i.ibb.co/DwtnKRW/screenshot-7-29-23-HOURLY-w-Nav.png)
+![screenshot](https://i.ibb.co/DwtnKRW/screenshot-7-29-23-HOURLY-w-Nav.png)
 
-![screenshotTwo](img src=https://i.ibb.co/84pJSZF/screenshot-7-29-23-Seven-Day-w-Nav.png)
+![screenshotTwo](https://i.ibb.co/84pJSZF/screenshot-7-29-23-Seven-Day-w-Nav.png)
 
 #### Credits:
 
@@ -94,13 +64,18 @@ Fabrice: 2 Components
 -Fotor - Image Generation for Logo
 -Photoshop - Image Editing
 -Figma - Wireframe Flow Diagram
+-Open Meteo - Geocoder & Forecast APIs https://open-meteo.com/
 
 ```
 
 #### Roadmap:
 
 - [x] Sliding Daily Weather Block Keyframe Animations
-- [ ] Link All Collaborative Pages With Router
+- [x] Icons for Weather Pages
+- [x] Link All Collaborative Pages With Router
 - [x] Unique Additional Navigation Bar For Hourly Page
+- [x] Current Week's Forecast
+- [x] Past Week's Weather
+- [x] Next Week's Forecast
 
 ---
